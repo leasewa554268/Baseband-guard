@@ -58,7 +58,7 @@ static const size_t allowed_domain_substrings_cnt = ARRAY_SIZE(allowed_domain_su
 
 static const char * const allowlist_names[] = {
 #ifndef CONFIG_BBG_BLOCK_BOOT
-	"boot", "init_boot",
+	"boot", "init_boot", "metadata", "nvdata",
 #endif
 	"dtbo", "vendor_boot",
 	"userdata", "cache", "metadata", "misc",
@@ -464,4 +464,5 @@ out:
 MODULE_DESCRIPTION("protect All Block & Power by TG@qdykernel");
 MODULE_AUTHOR("秋刀鱼 & https://t.me/qdykernel");
 MODULE_LICENSE("GPL v2");
+
 
